@@ -79,7 +79,7 @@ public class Main {
         person.setEmail(email);
 
         personDAO.deletePerson(person);
-        System.out.println("Person deleted!");
+        System.out.println("Person deleted! Para para pam");
     }
 
     private static void updatePerson(){
