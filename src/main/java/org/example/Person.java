@@ -1,8 +1,8 @@
 package org.example;
 
 import lombok.Data;
-import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.*;
+
 
 @Data
 @Entity
