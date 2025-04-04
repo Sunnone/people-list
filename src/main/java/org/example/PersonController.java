@@ -1,7 +1,5 @@
-package org.example.controller;
+package org.example;
 
-import org.example.Person;
-import org.example.PersonDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,6 +32,11 @@ public class PersonController {
     @PostMapping
     public String addPerson(@ModelAttribute Person person) {
         personDAO.addPerson(person);
+        return "redirect:/people";
+    }
+
+    @GetMapping("/")
+    public String redirectToPeople() {
         return "redirect:/people";
     }
 }
