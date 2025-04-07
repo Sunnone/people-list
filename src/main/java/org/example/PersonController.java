@@ -16,9 +16,9 @@ public class PersonController {
 
     @GetMapping
     public String getAllPeople(Model model) {
-        List<Person> people = personDAO.getAllPeople();
-        System.out.println("DEBUG: People count = " + people.size());
-        model.addAttribute("people", people);
+//        List<Person> people = personDAO.getAllPeople();
+//        System.out.println("DEBUG: People count = " + people.size());
+//        model.addAttribute("people", people);
         return "people/list";
     }
 
